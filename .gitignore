@@ -5,6 +5,8 @@
 !.gitignore
 !*.cpp
 !*.h
+!*.md
+!*.txt
 
 # even if they are in subdirectories
 !*/
