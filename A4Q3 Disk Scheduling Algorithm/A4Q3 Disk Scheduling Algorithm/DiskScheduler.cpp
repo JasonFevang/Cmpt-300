@@ -1,8 +1,7 @@
 #include "DiskScheduler.h"
 
-int DiskScheduler::FCFS() {
-	//code here
-	return 0;
+int DiskScheduler::FCFS(std::vector<int> input) {
+	return 1;
 }
 
 int DiskScheduler::SSTF(std::vector<int> input) {

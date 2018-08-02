@@ -6,7 +6,7 @@ public:
 	/*FCFS algorithm implementation
 	returns total head travel distance in cylinders for the input cylinder order using
 	first-come-first-serve disk-scheduling algorithm */
-	int FCFS();
+	int FCFS(std::vector<int> input);
 
 	/*SSTF algorithm implementation
 	returns total head travel distance in cylinders for the input cylinder order using

@@ -8,7 +8,7 @@ int main() {
 
 	DiskScheduler DS;
 	cout << "Total head travel distances\n";
-	cout << "FCFS: " << DS.FCFS() << "\n";
+	cout << "FCFS: " << DS.FCFS(input) << "\n";
 	cout << "SSTF: " << DS.SSTF(input) << "\n";
 	cout << "SCAN: " << DS.SCAN(input) << "\n";
 	cout << "LOOK: " << DS.LOOK(input) << "\n";
