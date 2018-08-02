@@ -10,7 +10,7 @@ public:
 
 	/*SSTF algorithm implementation
 	returns total head travel distance in cylinders for the input cylinder order using
-	shortest-time-first disk-scheduling algorithm */
+	shortest-scan-time-first disk-scheduling algorithm */
 	int SSTF(std::vector<int> input);
 
 	/*SCAN algorithm implementation
