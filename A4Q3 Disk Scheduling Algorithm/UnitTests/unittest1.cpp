@@ -13,7 +13,7 @@ namespace UnitTests
 		TEST_METHOD(FCFSEasy)
 		{
 			DiskScheduler DS;
-			std::vector<int> input = { 1, 2 };
+			std::vector<int> input = { 2, 1 };
 			int result = DS.FCFS(input);
 			Assert::AreEqual(result, 1);
 		}		
@@ -24,6 +24,22 @@ namespace UnitTests
 			int result = DS.FCFS(input);
 			Assert::AreEqual(result, 454);
 		}
+
+		TEST_METHOD(SSTFEasy)
+		{
+			DiskScheduler DS;
+			std::vector<int> input = { 2, 1 };
+			int result = DS.SSTF(input);
+			Assert::AreEqual(result, 1);
+		}
+		TEST_METHOD(SSTFHard)
+		{
+			DiskScheduler DS;
+			std::vector<int> input = { 5, 50, 45, 82, 7, 18, 1, 0, 99, 56, 92, 7 };
+			int result = DS.SSTF(input);
+			Assert::AreEqual(result, 108);
+		}
+
 
 	};
 }

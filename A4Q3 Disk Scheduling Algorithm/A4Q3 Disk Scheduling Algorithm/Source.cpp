@@ -4,9 +4,11 @@
 using namespace std;
 
 int main() {
-	vector<int> input = { 1, 2, 3 };
-
 	DiskScheduler DS;
+	std::vector<int> input = { 5, 50, 45, 82, 7, 18, 1, 0, 99, 56, 92, 7 };
+	int result = DS.SSTF(input);
+
+/*
 	cout << "Total head travel distances\n";
 	cout << "FCFS: " << DS.FCFS(input) << "\n";
 	cout << "SSTF: " << DS.SSTF(input) << "\n";
@@ -14,6 +16,6 @@ int main() {
 	cout << "LOOK: " << DS.LOOK(input) << "\n";
 	cout << "C-SCAN: " << DS.CSCAN(input) << "\n";
 	cout << "C-LOOK: " << DS.CLOOK(input) << "\n";
-
+*/
 	return 0;
 }
