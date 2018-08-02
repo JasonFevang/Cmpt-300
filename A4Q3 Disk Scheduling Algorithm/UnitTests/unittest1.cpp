@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-
+#include <vector>
+#include "..\A4Q3 Disk Scheduling Algorithm\DiskScheduler.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTests
@@ -9,9 +10,12 @@ namespace UnitTests
 	{
 	public:
 		
-		TEST_METHOD(TestMethod1)
+		TEST_METHOD(FCFSEasy)
 		{
-			// TODO: Your test code here
+			DiskScheduler DS;
+			std::vector<int> input = { 1, 2 };
+			int result = DS.FCFS();
+			Assert::AreEqual(result, 1);
 		}
 
 	};
